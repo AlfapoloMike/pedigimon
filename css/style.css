@@ -1,0 +1,18 @@
+#items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    text-align: center;
+    margin: 1rem;
+}
+.card img{
+    height: 20rem;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
