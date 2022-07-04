@@ -12,6 +12,7 @@ export const digimons = [{
         evolucion: 'Greymon',
         lineaEvolutiva: 'Agumon Classic',
         precio: '200',
+        stock: '3',
     },
     {
         nombre: 'Gabumon',
@@ -27,6 +28,7 @@ export const digimons = [{
         evolucion: 'Garurumon',
         lineaEvolutiva: 'Gabumon',
         precio: '200',
+        stock: '2',
     },
     {
         nombre: 'Piyomon',
@@ -42,6 +44,7 @@ export const digimons = [{
         evolucion: 'Birdramon',
         lineaEvolutiva: 'Piyomon',
         precio: '150',
+        stock: '5',
     },
     {
         nombre: 'Patamon',
@@ -57,6 +60,7 @@ export const digimons = [{
         evolucion: 'Angemon',
         lineaEvolutiva: 'Patamon',
         precio: '300',
+        stock: '5',
     },
     {
         nombre: 'Tentomon',
@@ -72,6 +76,7 @@ export const digimons = [{
         evolucion: 'Kabuterimon',
         lineaEvolutiva: 'Tentomon',
         precio: '150',
+        stock: '5',
     },
     {
         nombre: 'Palmon',
@@ -87,6 +92,7 @@ export const digimons = [{
         evolucion: 'Togemon',
         lineaEvolutiva: 'Palmon Togemon',
         precio: '150',
+        stock: '5',
     },
     {
         nombre: 'Salamon',
@@ -102,6 +108,7 @@ export const digimons = [{
         evolucion: 'Tailmon',
         lineaEvolutiva: 'Tailmon',
         precio: '300',
+        stock: '5',
     },
     {
         nombre: 'Gomamon',
@@ -117,6 +124,7 @@ export const digimons = [{
         evolucion: 'Ikkakumon',
         lineaEvolutiva: 'Gomamon',
         precio: '150',
+        stock: '5',
     },
 
     {
@@ -133,6 +141,7 @@ export const digimons = [{
         evolucion: 'Metalgreymon',
         lineaEvolutiva: 'Agumon Classic',
         precio: '600',
+        stock: '0',
 
     },
     {
@@ -149,6 +158,7 @@ export const digimons = [{
         evolucion: 'Weregarurumon',
         lineaEvolutiva: 'Gabumon',
         precio: '600',
+        stock: '0',
     },
     {
         nombre: 'Birdramon',
@@ -164,6 +174,7 @@ export const digimons = [{
         evolucion: 'Garudamon',
         lineaEvolutiva: 'Piyomon',
         precio: '500',
+        stock: '3',
     },
     {
         nombre: 'Angemon',
@@ -179,6 +190,7 @@ export const digimons = [{
         evolucion: 'Holyangemon',
         lineaEvolutiva: 'Patamon',
         precio: '650',
+        stock: '3',
     },
     {
         nombre: 'Kabuterimon',
@@ -194,6 +206,7 @@ export const digimons = [{
         evolucion: 'Megakabuterimon',
         lineaEvolutiva: 'Tentomon',
         precio: '500',
+        stock: '3',
     },
     {
         nombre: 'Togemon',
@@ -209,6 +222,7 @@ export const digimons = [{
         evolucion: 'Liylmon',
         lineaEvolutiva: 'Palmon Togemon',
         precio: '500',
+        stock: '3',
     },
     {
         nombre: 'Tailmon',
@@ -224,6 +238,7 @@ export const digimons = [{
         evolucion: 'Angewomon',
         lineaEvolutiva: 'Tailmon',
         precio: '650',
+        stock: '3',
     },
     {
         nombre: 'Ikkakumon',
@@ -239,6 +254,7 @@ export const digimons = [{
         evolucion: 'Zudomon',
         lineaEvolutiva: 'Gomamon',
         precio: '500',
+        stock: '3',
     },
     {
         nombre: 'Metalgreymon',
@@ -254,6 +270,7 @@ export const digimons = [{
         evolucion: 'Wargreymon',
         lineaEvolutiva: 'Agumon Classic',
         precio: '900',
+        stock: '4',
     },
     {
         nombre: 'Weregarurumon',
@@ -269,6 +286,7 @@ export const digimons = [{
         evolucion: 'Metalgarurumon',
         lineaEvolutiva: 'Gabumon',
         precio: '900',
+        stock: '4',
     },
     {
         nombre: 'Garudamon',
@@ -284,6 +302,7 @@ export const digimons = [{
         evolucion: 'Phoenixmon',
         lineaEvolutiva: 'Piyomon',
         precio: '800',
+        stock: '4',
     },
     {
         nombre: 'Holyangemon',
@@ -299,6 +318,7 @@ export const digimons = [{
         evolucion: 'Seraphimon',
         lineaEvolutiva: 'Patamon',
         precio: '950',
+        stock: '4',
     },
     {
         nombre: 'Megakabuterimon',
@@ -314,6 +334,7 @@ export const digimons = [{
         evolucion: 'Herculeskabuterimon',
         lineaEvolutiva: 'Tentomon',
         precio: '800',
+        stock: '0',
     },
     {
         nombre: 'Lilymon',
@@ -329,6 +350,7 @@ export const digimons = [{
         evolucion: 'Rosemon',
         lineaEvolutiva: 'Palmon Togemon',
         precio: '800',
+        stock: '4',
     },
     {
         nombre: 'Zudomon',
@@ -344,6 +366,7 @@ export const digimons = [{
         evolucion: 'Vikemon',
         lineaEvolutiva: 'Gomamon',
         precio: '800',
+        stock: '2',
     },
     {
         nombre: 'Angewomon',
@@ -359,6 +382,7 @@ export const digimons = [{
         evolucion: 'Magnadramon',
         lineaEvolutiva: 'Tailmon',
         precio: '950',
+        stock: '2',
     },
     {
         nombre: 'Wargreymon',
@@ -373,7 +397,8 @@ export const digimons = [{
         evolucionPrevia: 'Metalgreymon',
         evolucion: 'Omnimon',
         lineaEvolutiva: 'Agumon Classic',
-        precio: '',
+        precio: '1500',
+        stock: '2',
     },
     {
         nombre: 'Metalgarurumon',
@@ -388,7 +413,8 @@ export const digimons = [{
         evolucionPrevia: 'Weregarurumon',
         evolucion: 'Omnimon',
         lineaEvolutiva: 'Gabumon',
-        precio: '',
+        precio: '1500',
+        stock: '2',
     },
     {
         nombre: 'Phoenixmon',
@@ -403,7 +429,8 @@ export const digimons = [{
         evolucionPrevia: 'Garudamon',
         evolucion: '',
         lineaEvolutiva: 'Piyomon',
-        precio: '',
+        precio: '1500',
+        stock: '8',
     },
     {
         nombre: 'Seraphimon',
@@ -418,7 +445,8 @@ export const digimons = [{
         evolucionPrevia: 'Holyangemon',
         evolucion: '',
         lineaEvolutiva: 'Patamon',
-        precio: '',
+        precio: '1500',
+        stock: '8',
     },
     {
         nombre: 'Herculeskabuterimon',
@@ -433,7 +461,8 @@ export const digimons = [{
         evolucionPrevia: 'Megakabuterimon',
         evolucion: '',
         lineaEvolutiva: 'Tentomon',
-        precio: '',
+        precio: '1500',
+        stock: '8',
     },
     {
         nombre: 'Rosemon',
@@ -448,7 +477,8 @@ export const digimons = [{
         evolucionPrevia: 'Lilymon',
         evolucion: '',
         lineaEvolutiva: 'Palmon Togemon',
-        precio: '',
+        precio: '1500',
+        stock: '8',
     },
     {
         nombre: 'Vikemon',
@@ -463,7 +493,8 @@ export const digimons = [{
         evolucionPrevia: 'Zudomon',
         evolucion: '',
         lineaEvolutiva: 'Gomamon',
-        precio: '',
+        precio: '1500',
+        stock: '8',
     },
     {
         nombre: 'Magnadramon',
@@ -478,7 +509,8 @@ export const digimons = [{
         evolucionPrevia: 'Angewomon',
         evolucion: '',
         lineaEvolutiva: 'Tailmon',
-        precio: '',
+        precio: '1500',
+        stock: '8',
     },
     {
         nombre: 'Koromon',
@@ -493,7 +525,8 @@ export const digimons = [{
         evolucionPrevia: 'Botamon',
         evolucion: 'Agumon',
         lineaEvolutiva: 'Agumon Classic',
-        precio: '',
+        precio: '50',
+        stock: '8',
     },
     {
         nombre: 'Tsunomon',
@@ -508,7 +541,8 @@ export const digimons = [{
         evolucionPrevia: 'Punimon',
         evolucion: 'Gabumon',
         lineaEvolutiva: 'Gabumon',
-        precio: '',
+        precio: '50',
+        stock: '4',
     },
     {
         nombre: 'Motimon',
@@ -523,7 +557,8 @@ export const digimons = [{
         evolucionPrevia: 'Pabumon',
         evolucion: 'Tentomon',
         lineaEvolutiva: 'Tentomon',
-        precio: '',
+        precio: '50',
+        stock: '4',
     },
     {
         nombre: 'Nyaromon',
@@ -538,7 +573,8 @@ export const digimons = [{
         evolucionPrevia: 'Yukimibotamon',
         evolucion: 'Salamon',
         lineaEvolutiva: 'Tailmon',
-        precio: '',
+        precio: '50',
+        stock: '4',
     },
     {
         nombre: 'Bukamon',
@@ -553,7 +589,8 @@ export const digimons = [{
         evolucionPrevia: 'Pichimon',
         evolucion: 'Gomamon',
         lineaEvolutiva: 'Gomamon',
-        precio: '',
+        precio: '50',
+        stock: '4',
     },
     {
         nombre: 'Tanemon',
@@ -569,6 +606,7 @@ export const digimons = [{
         evolucion: 'Tanemon',
         lineaEvolutiva: 'Palmon Togemon',
         precio: '50',
+        stock: '4',
     },
     {
         nombre: 'Tokomon',
@@ -584,6 +622,7 @@ export const digimons = [{
         evolucion: 'Patamon',
         lineaEvolutiva: 'Patamon',
         precio: '50',
+        stock: '4',
     },
     {
         nombre: 'Yokomon',
@@ -599,6 +638,7 @@ export const digimons = [{
         evolucion: 'Piyomon',
         lineaEvolutiva: 'Piyomon',
         precio: '50',
+        stock: '0',
     },
     
 
