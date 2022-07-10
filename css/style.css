@@ -249,6 +249,60 @@ background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
     transition-duration: 1s;
 
 }
+/* ---------------------------- WEB NAV */
+
+.webNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.navLink{
+    padding: 1rem;
+}
+
+
+/* -----------------------------CART STYLE */
+
+th{
+    width: 0.5rem;
+    height: 1rem;
+    overflow: hidden;
+    background-color: #12202D;
+    color: white;
+    padding: 0.5rem;
+    border-color: #1f364d;
+    border-style:ridge;
+}
+th img{
+    width: 5rem;
+}
+.cartWeb{
+    display: flex;
+    flex-direction: column;
+}
+.tableContainer{
+    display: none;
+}
+.cartIcon{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.cartIcon:hover ~ .tableContainer{
+    display: unset;
+    position:absolute;
+    z-index: 100;
+    top: 11%;
+}
+.tableContainer:hover{
+    display: unset;
+    position:absolute;
+    z-index: 100;
+    top: 11%;
+}
+
 
 @font-face {
     font-family: MiddleFont;
