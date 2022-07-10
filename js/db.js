@@ -389,7 +389,7 @@ export const digimons = [{
         tipo: 'Vacuna',
         nivel: 'Mega',
         elemento: 'Fuego',
-        imagen: '/assets/agumon/wargreymon1.png',
+        imagen: '/assets/agumon/wargreymon.png',
         linkweb: '',
         familia: 'Metal Empire',
         familia2: 'Virus Busters',
