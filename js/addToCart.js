@@ -1,9 +1,15 @@
+import { cleanHTML } from "./cleanHtml.js"
+import { showItemCart } from "./showItemCart.js"
+import { createCartTable } from "./table.js"
+
 export let cartItems = []
 export const addToCart = (operador, digimon ) =>{
 
 
     const totalUnits = document.querySelector('#totalUnits')
     const totalPrice = document.querySelector('#totalPrice') 
+    const cartTable = document.querySelector('#tableContainer')
+
     if(totalUnits.value > 0 && operador === '-' && parseInt(totalPrice.textContent) > 0){
         totalUnits.value--
         totalPrice.textContent = parseInt(totalPrice.textContent) - parseInt(digimon.precio)  
@@ -32,11 +38,17 @@ export const addToCart = (operador, digimon ) =>{
         cartItems.map(digi =>{
             if(digi.nombre === addItem.nombre){
                 digi.cantidad--
-                return
+                if(digi.cantidad === 0){
+                    cartItems = cartItems.filter(item => item.nombre !== addItem.nombre)
+                }
             }
         })
     }else{
         cartItems = [...cartItems, addItem]
     }
 
+    cleanHTML(cartTable);
+    createCartTable();
+    showItemCart(cartItems);
+    
 }
