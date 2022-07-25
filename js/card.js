@@ -1,9 +1,10 @@
 
-import { digimons } from './db.js';
+// import { digimons } from './db.js';
 
-export const showDigimon = () =>{
+
+export const showDigimon = (digi) =>{
     const cardsContainer = document.querySelector('#items')
-    digimons.map(digimon =>{
+    digi.map(digimon =>{
         // ----------- valido stock
         let stockStatus = ''
         if(digimon.stock > 0){

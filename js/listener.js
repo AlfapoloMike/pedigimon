@@ -1,10 +1,10 @@
 import { addToCart } from "./addToCart.js"
-import { digimons } from "./db.js"
+// import { digimons } from "./db.js"
 
 
-export const addListeners = () => {
+export const addListeners = (digimones) => {
 
-    digimons.map(digimon => {
+    digimones.map(digimon => {
         const substractLocation = document.querySelector(` #${digimon.nombre} > form > button.substract `)
         const increaseLocation = document.querySelector(` #${digimon.nombre} > form > button.increase `)
         const quantityValue = document.querySelector(` #${digimon.nombre} > form > input.quatity `)
@@ -32,6 +32,14 @@ export const addListeners = () => {
 
             }
         })
+
+        // quantityValue.addEventListener('DOMContentLoaded', (e) =>{
+        //     e.preventDefault()
+        //     const cartInStorage = JSON.parse(localStorage.getItem("cartStorage"))
+        //     if(cartInStorage){
+        //         console.log("cosas en el storage");
+        //     }
+        // })
 
     })
 

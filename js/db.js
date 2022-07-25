@@ -515,7 +515,7 @@ export const digimons = [{
     {
         nombre: 'Koromon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/agumon/koromon.png',
         linkweb: '',
@@ -531,7 +531,7 @@ export const digimons = [{
     {
         nombre: 'Tsunomon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/gabumon/tsunomon.png',
         linkweb: '',
@@ -547,7 +547,7 @@ export const digimons = [{
     {
         nombre: 'Motimon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/tentomon/motimon.png',
         linkweb: '',
@@ -563,7 +563,7 @@ export const digimons = [{
     {
         nombre: 'Nyaromon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/tailmon/nyaromon.png',
         linkweb: '',
@@ -579,7 +579,7 @@ export const digimons = [{
     {
         nombre: 'Bukamon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/gomamon/bukamon.png',
         linkweb: '',
@@ -595,7 +595,7 @@ export const digimons = [{
     {
         nombre: 'Tanemon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/palmon/tanemon.png',
         linkweb: '',
@@ -611,7 +611,7 @@ export const digimons = [{
     {
         nombre: 'Tokomon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/patamon/tokomon.png',
         linkweb: '',
@@ -627,7 +627,7 @@ export const digimons = [{
     {
         nombre: 'Yokomon',
         tipo: 'Neutral',
-        nivel: 'In-Trainig',
+        nivel: 'in-training',
         elemento: 'Neutral',
         imagen: '/assets/piyomon/yokomon.png',
         linkweb: '',

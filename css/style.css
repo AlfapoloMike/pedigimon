@@ -54,6 +54,15 @@ body {
     background-image: url(/assets/digimon-ui/Background.png);
 }
 
+
+#items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    height: 120rem;
+
+}
 .cardContainers {
     width: 89rem;
     height: 120rem;
@@ -63,14 +72,6 @@ body {
     padding: 1rem;
     margin-top: 5rem;
     border-radius: 15px;
-}
-
-#items {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 120rem;
-
 }
 
 .card {
