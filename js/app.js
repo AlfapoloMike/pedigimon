@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     cardFilter()
     createCartTable();
     showDigimon(digimons);
+    pageChange(digimons);
     addListeners(digimons);
     checkStorage()
 } )

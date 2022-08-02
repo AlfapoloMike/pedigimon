@@ -33,14 +33,6 @@ export const addListeners = (digimones) => {
             }
         })
 
-        // quantityValue.addEventListener('DOMContentLoaded', (e) =>{
-        //     e.preventDefault()
-        //     const cartInStorage = JSON.parse(localStorage.getItem("cartStorage"))
-        //     if(cartInStorage){
-        //         console.log("cosas en el storage");
-        //     }
-        // })
-
     })
 
 

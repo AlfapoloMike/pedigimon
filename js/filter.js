@@ -43,6 +43,7 @@ import { showDigimon } from "./card.js"
 import { checkStorage } from "./checkLocalStorage.js"
 import { cleanHTML } from "./cleanHtml.js"
 import { digimons } from "./db.js"
+import { errorFilter } from "./error.js"
 import { addListeners } from "./listener.js"
 import { pageChange } from "./pageNav.js"
 
@@ -59,12 +60,21 @@ export const cardFilter = ()=>{
     filterContainer.addEventListener('change', (e) =>{
         e.preventDefault()
         const digimonFiltered = digimons.filter(digi => typeSelect(digi)).filter(digi => levelSelect(digi)).filter(digi => elementSelect(digi))
-        cleanHTML(cardsContainer)
-        cleanHTML(pageNav)
-        showDigimon(digimonFiltered)
-        addListeners(digimonFiltered)
-        pageChange()
-        checkStorage()
+
+        // console.log(digimonFiltered);
+        if(digimonFiltered.length === 0){
+            cleanHTML(cardsContainer)
+            cleanHTML(pageNav)
+            errorFilter();
+        }else{
+            cleanHTML(cardsContainer)
+            cleanHTML(pageNav)
+            showDigimon(digimonFiltered)
+            addListeners(digimonFiltered)
+            pageChange(digimonFiltered)
+            checkStorage()
+            // pageChange(digimonFiltered)
+        }
     })
 const typeSelect =(digi)=>{
     if(digi.tipo.toLocaleLowerCase() === digimonType.value){

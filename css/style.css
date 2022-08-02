@@ -54,40 +54,69 @@ body {
     background-image: url(/assets/digimon-ui/Background.png);
 }
 
+/* ----------------------------------------------------FILTER STYLE */
+
+.filterContainer{
+    text-align: center;
+}
+
+/* -----------------------------------------------------ERROR STYLE */
+
+.error{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.error p{
+    margin: 1rem;
+}
+.error img{
+    border-radius: 50%;
+    width: 25rem;
+
+}
 
 #items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content:space-around; */
-    height: 120rem;
+    height: auto;
+    
 
 }
 .cardContainers {
-    width: 89rem;
-    height: 120rem;
-    overflow: hidden;
-    background-color: black;
+    width: 90rem;
+    height: auto;
+    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
     margin: auto;
     padding: 1rem;
     margin-top: 5rem;
     border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .card {
     position: relative;
     margin: 2rem 2rem 2rem 2rem;
     width: fit-content;
+    height: 29rem;
+    
 
 }
 
 .card img {
     width: auto;
     height: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 
 }
 
-.borde {
+/* .borde {
     background-image: url(/assets/digimon-ui/border.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -97,8 +126,31 @@ body {
     top: -2.4%;
     left: -3.8%;
     background-blend-mode: multiply;
+} */
+
+.borde {
+    background-image: url(/assets/digimon-ui/border.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 108%;
+    height: 100%;
+    position: absolute;
+    top: -2%;
+    left: -3.8%;
+    background-blend-mode: multiply;
+    
 }
 
+/* .tipoIMG {
+    background-image: url(/assets/digimon-ui/Vaccine.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    top: 3%;
+    left: 4%;
+} */
 .tipoIMG {
     background-image: url(/assets/digimon-ui/Vaccine.png);
     background-repeat: no-repeat;
@@ -109,8 +161,7 @@ body {
     top: 3%;
     left: 4%;
 }
-
-.elemento {
+/* .elemento {
     background-image: url(/assets/digimon-ui/Fire.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -120,13 +171,34 @@ body {
     top: 17%;
     left: 4.6%;
 
+} */
+.elemento {
+    background-image: url(/assets/digimon-ui/Fire.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 14%;
+    height: 14%;
+    top: 15%;
+    left: 4.6%;
+
 }
 
-.tipo {
+/* .tipo {
     border-radius: 5px;
     position: absolute;
     color: black;
     top: 83%;
+    left: 10%;
+    text-align: center;
+    background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
+    width: 36%;
+} */
+.tipo {
+    border-radius: 5px;
+    position: absolute;
+    color: black;
+    top: 73%;
     left: 10%;
     text-align: center;
     background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
@@ -137,14 +209,24 @@ body {
     border-radius: 5px;
     position: absolute;
     color: black;
-    top: 83%;
+    top: 73%;
     left: 55%;
     text-align: center;
     background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
     width: 36%;
 }
+/* .level {
+    border-radius: 5px;
+    position: absolute;
+    color: black;
+    top: 83%;
+    left: 55%;
+    text-align: center;
+    background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
+    width: 36%;
+} */
 
-.name {
+/* .name {
     border-radius: 5px;
     padding: 0.1rem;
     position: absolute;
@@ -155,34 +237,69 @@ body {
     background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
     width: 50%;
     font-size: 0.9rem;
+} */
+.name {
+    border-radius: 5px;
+    padding: 0.1rem;
+    position: absolute;
+    color: black;
+    top: 67%;
+    left: 25%;
+    text-align: center;
+    background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
+    width: 50%;
+    font-size: 0.9rem;
 }
 
-.precio {
+/* .precio {
     width: 10%;
     text-align: center;
     position: absolute;
     top: 94%;
     left: 43%;
     color: white;
+} */
+.precio {
+    width: 10%;
+    text-align: center;
+    position: absolute;
+    top: 82%;
+    left: 43%;
+    color: white;
 }
 
 .substract {
+    position: absolute;
+    top: 83%;
+    left: 29%;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 0.1rem;
+}
+/* .substract {
     position: absolute;
     top: 96%;
     left: 29%;
     font-size: 1rem;
     font-weight: bolder;
     padding: 0.1rem;
-}
+} */
 .substract:hover{
     background-color: #f1f163;
     border-color: #f1f163;
  }
-
-.increase {
+ /* .increase {
     position: absolute;
     top: 96%;
     left: 66%;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 0.1rem;
+} */
+.increase {
+    position: absolute;
+    top: 83%;
+    left: 65%;
     font-size: 1rem;
     font-weight: bolder;
     padding: 0.1rem;
@@ -192,10 +309,17 @@ body {
    border-color: #f1f163;
 }
 
-.quatity {
+/* .quatity {
     text-align: center;
     position: absolute;
     top: 101%;
+    left: 44.8%;
+    width: 10%;
+} */
+.quatity {
+    text-align: center;
+    position: absolute;
+    top: 88%;
     left: 44.8%;
     width: 10%;
 }
@@ -233,7 +357,7 @@ background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
 }
 
 /* -------------------------THIS MOVE THE CARD PAGE */
-.page1{
+/* .page1{
     transform: translateX(0rem);
     transition-duration: 1s;
 
@@ -249,19 +373,32 @@ background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
     transition: ease;
     transition-duration: 1s;
 
-}
+} */
 /* ---------------------------- WEB NAV */
 
 .webNav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5rem;
+    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
+    width: fit-content;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    height: 4rem;
 }
 .navLink{
     padding: 1rem;
+    padding-top: 1.5rem;
 }
-
+.navLink a{
+    color: black;
+}
+.navLink:hover{
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+ }
 
 /* -----------------------------CART STYLE */
 
@@ -279,11 +416,13 @@ th img{
     width: 5rem;
 }
 .cartWeb{
+    align-self: center;
     display: flex;
     flex-direction: column;
 }
 .tableContainer{
     display: none;
+    
 }
 .cartIcon{
     width: 2rem;
@@ -291,11 +430,15 @@ th img{
     background-color: white;
     border-radius: 50%;
 }
-.cartIcon:hover ~ .tableContainer{
+
+.cartWeb:hover > .tableContainer{
     display: unset;
     position:absolute;
     z-index: 100;
     top: 11%;
+    overflow-y: scroll;
+    max-height: 30rem;
+    border-radius: 10px;
 }
 .tableContainer:hover{
     display: unset;
@@ -305,7 +448,107 @@ th img{
 }
 
 
+/* ------------------------------------------------------------------------INDEX STYLE */
+
+.welcome{
+    margin: 2rem;
+    text-align: center;
+    color: white;
+}
+.introduction{
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+.introduction h3{
+    font-size: 1.5rem;
+}
+.introduction p{
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+
 @font-face {
     font-family: MiddleFont;
     src: url(/assets/font/monofonto\ rg.otf);
+}
+
+
+/* ---------------------------------------------------------------------------------LOGIN STYLE */
+
+.container{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
+    height: 13rem;
+    width: 40%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.option{
+    padding: 0.5rem;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.login{
+    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
+    height: 16rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.loginOption{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 50%;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login a{
+    margin-top: 1rem;
+    color: black;
+}
+.register{
+    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
+    height: 25rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.formOption{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 50%;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.registerSucces{
+    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
+    height: 12rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
 }
