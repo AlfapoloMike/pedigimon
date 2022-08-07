@@ -59,45 +59,4 @@ export const addToCart = (operador, digimon) => {
 
 
 
-
-    // const addItem = {
-    //     img: digimon.imagen,
-    //     nombre: digimon.nombre,
-    //     precio: digimon.precio,
-    //     cantidad: 1,
-    // }
-    // const created = cartItems.some(digi => digi.nombre === addItem.nombre)
-
-    // if (created && operador === '+') {
-    //     cartItems.map(digi => {
-    //         if (digi.nombre === addItem.nombre) {
-    //             digi.cantidad++
-    //             return
-    //         }
-    //     })
-    // } else if (created && operador === '-') {
-    //     cartItems.map(digi => {
-    //         if (digi.nombre === addItem.nombre) {
-    //             digi.cantidad--
-    //             if (digi.cantidad === 0) {
-    //                 cartItems = cartItems.filter(item => item.nombre !== addItem.nombre)
-    //             }
-    //         }
-    //     })
-    // } else {
-    //     cartItems = [...cartItems, addItem]
-    // }
-
-
-    // const cartStrinified = JSON.stringify(cartItems)
-
-    // localStorage.setItem("cartStorage", cartStrinified)
-
-
-
-    // cleanHTML(cartTable);
-    // createCartTable();
-    // showItemCart(cartItems);
-    // createCartTotal(cartItems);
-
 }

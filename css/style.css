@@ -58,6 +58,14 @@ body {
 
 .filterContainer{
     text-align: center;
+    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    width: fit-content;
+}
+.filterContainer select{
+    margin-bottom: 1rem;
 }
 
 /* -----------------------------------------------------ERROR STYLE */
@@ -335,46 +343,7 @@ body {
 .stockOK{
     display: none;
 }
-/* ----------------------BUTTONS FOR CHANGE PAGE */
-.pageNav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-.pageNumber{
-    width: 3rem;
-    height: 3rem;
-    background-color: white;
-    margin: 1rem;
-    font-size: 1rem;
-    text-align: center;
-}
-.pageNumber:hover{
-
-background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
-
-}
-
-/* -------------------------THIS MOVE THE CARD PAGE */
-/* .page1{
-    transform: translateX(0rem);
-    transition-duration: 1s;
-
-}
-.page2{
-    transform: translateX(-88rem);
-    transition: ease;
-    transition-duration: 1s;
-
-}
-.page3{
-    transform: translateX(-176rem);
-    transition: ease;
-    transition-duration: 1s;
-
-} */
-/* ---------------------------- WEB NAV */
+/* ----------------------WEB NAV */
 
 .webNav{
     display: flex;
@@ -393,7 +362,8 @@ background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
     padding-top: 1.5rem;
 }
 .navLink a{
-    color: black;
+    color: white;
+    font-size: 1.2rem;
 }
 .navLink:hover{
     border-radius: 10px;
@@ -530,6 +500,8 @@ th img{
     margin: auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    font-size: 1.2rem;
 }
 .formOption{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

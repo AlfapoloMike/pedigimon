@@ -45,7 +45,6 @@ import { cleanHTML } from "./cleanHtml.js"
 import { digimons } from "./db.js"
 import { errorFilter } from "./error.js"
 import { addListeners } from "./listener.js"
-import { pageChange } from "./pageNav.js"
 
 
 
@@ -55,25 +54,19 @@ export const cardFilter = ()=>{
     const digimonLevel = document.querySelector('.levelFilter')
     const digimonElement = document.querySelector('.elementFilter')
     const cardsContainer = document.querySelector('#items')
-    const pageNav =  document.querySelector('.pageNav')
-    
+        
     filterContainer.addEventListener('change', (e) =>{
         e.preventDefault()
         const digimonFiltered = digimons.filter(digi => typeSelect(digi)).filter(digi => levelSelect(digi)).filter(digi => elementSelect(digi))
 
-        // console.log(digimonFiltered);
         if(digimonFiltered.length === 0){
             cleanHTML(cardsContainer)
-            cleanHTML(pageNav)
             errorFilter();
         }else{
             cleanHTML(cardsContainer)
-            cleanHTML(pageNav)
             showDigimon(digimonFiltered)
             addListeners(digimonFiltered)
-            pageChange(digimonFiltered)
             checkStorage()
-            // pageChange(digimonFiltered)
         }
     })
 const typeSelect =(digi)=>{

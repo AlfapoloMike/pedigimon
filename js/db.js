@@ -756,7 +756,7 @@ const digimonFamilysIcon = [{
         icono: '/assets/digimon-ui/Wind_Guardians_Icon.png',
     },
 ]
-const digimonTypesIcon = [{
+export const digimonTypesIcon = [{
         tipo:'Virus',
         icono: '/assets/digimon-ui/Virus.png',
 
@@ -778,7 +778,7 @@ const digimonTypesIcon = [{
     },
 
 ]
-const digimonElementIcon = [
+export const digimonElementIcon = [
     {
         elemento: 'Fuego',
         icono: '/assets/digimon-ui/Fire.png',
