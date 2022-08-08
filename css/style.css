@@ -1,45 +1,3 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-#items{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.card img{
-    height: 20rem;
-}
-form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-tbody img{
-    width: 8rem;
-}
-.card1{
-    margin: 2rem;
-width: fit-content;}
-#Tentomon{
-    position: absolute;
-    width: auto;
-    height: 20rem;
-    overflow:hidden;
-}
-.borde{
-    height: 20rem;
-    width: 15rem;
-    background-image: url(/assets/test/borderCard.png);
-    background-size: 15rem 20rem;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 0;
-    left: 0;
-} */
-
 
 /* --------------------- */
 
@@ -61,12 +19,13 @@ body {
     background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
     padding: 1rem;
     border-radius: 10px;
-    margin: auto;
+    margin: 5rem auto 0.5rem auto;
     width: fit-content;
+    display: flex;
+    color: #FFFF;
+    text-shadow: -6px 4px 4px rgba(0,0,0,0.48);
 }
-.filterContainer select{
-    margin-bottom: 1rem;
-}
+
 
 /* -----------------------------------------------------ERROR STYLE */
 
@@ -100,7 +59,8 @@ body {
     background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
     margin: auto;
     padding: 1rem;
-    margin-top: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -124,17 +84,6 @@ body {
 
 }
 
-/* .borde {
-    background-image: url(/assets/digimon-ui/border.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 108%;
-    height: 114%;
-    position: absolute;
-    top: -2.4%;
-    left: -3.8%;
-    background-blend-mode: multiply;
-} */
 
 .borde {
     background-image: url(/assets/digimon-ui/border.png);
@@ -149,16 +98,7 @@ body {
     
 }
 
-/* .tipoIMG {
-    background-image: url(/assets/digimon-ui/Vaccine.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    width: 15%;
-    height: 15%;
-    top: 3%;
-    left: 4%;
-} */
+
 .tipoIMG {
     background-image: url(/assets/digimon-ui/Vaccine.png);
     background-repeat: no-repeat;
@@ -169,17 +109,7 @@ body {
     top: 3%;
     left: 4%;
 }
-/* .elemento {
-    background-image: url(/assets/digimon-ui/Fire.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    width: 14%;
-    height: 14%;
-    top: 17%;
-    left: 4.6%;
 
-} */
 .elemento {
     background-image: url(/assets/digimon-ui/Fire.png);
     background-repeat: no-repeat;
@@ -192,16 +122,6 @@ body {
 
 }
 
-/* .tipo {
-    border-radius: 5px;
-    position: absolute;
-    color: black;
-    top: 83%;
-    left: 10%;
-    text-align: center;
-    background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
-    width: 36%;
-} */
 .tipo {
     border-radius: 5px;
     position: absolute;
@@ -223,29 +143,7 @@ body {
     background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
     width: 36%;
 }
-/* .level {
-    border-radius: 5px;
-    position: absolute;
-    color: black;
-    top: 83%;
-    left: 55%;
-    text-align: center;
-    background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
-    width: 36%;
-} */
 
-/* .name {
-    border-radius: 5px;
-    padding: 0.1rem;
-    position: absolute;
-    color: black;
-    top: 76%;
-    left: 25%;
-    text-align: center;
-    background: linear-gradient(to right, #ABAB13 0%, #f1f163 100%);
-    width: 50%;
-    font-size: 0.9rem;
-} */
 .name {
     border-radius: 5px;
     padding: 0.1rem;
@@ -259,14 +157,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* .precio {
-    width: 10%;
-    text-align: center;
-    position: absolute;
-    top: 94%;
-    left: 43%;
-    color: white;
-} */
 .precio {
     width: 10%;
     text-align: center;
@@ -284,26 +174,12 @@ body {
     font-weight: bolder;
     padding: 0.1rem;
 }
-/* .substract {
-    position: absolute;
-    top: 96%;
-    left: 29%;
-    font-size: 1rem;
-    font-weight: bolder;
-    padding: 0.1rem;
-} */
+
 .substract:hover{
     background-color: #f1f163;
     border-color: #f1f163;
  }
- /* .increase {
-    position: absolute;
-    top: 96%;
-    left: 66%;
-    font-size: 1rem;
-    font-weight: bolder;
-    padding: 0.1rem;
-} */
+
 .increase {
     position: absolute;
     top: 83%;
@@ -317,13 +193,6 @@ body {
    border-color: #f1f163;
 }
 
-/* .quatity {
-    text-align: center;
-    position: absolute;
-    top: 101%;
-    left: 44.8%;
-    width: 10%;
-} */
 .quatity {
     text-align: center;
     position: absolute;
@@ -338,7 +207,6 @@ body {
     top: 30%;
     width: 100%;
     height: 35%;
-    /* background-color: red; */
 }
 .stockOK{
     display: none;
@@ -348,26 +216,43 @@ body {
 .webNav{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
-    width: fit-content;
-    margin: auto;
-    margin-top: 3rem;
     margin-bottom: 3rem;
-    border-radius: 10px;
-    height: 4rem;
+    background-color: #0b1b2b;
+    height: 6rem;
+    text-shadow: -6px 4px 4px rgba(0,0,0,0.48);
 }
 .navLink{
     padding: 1rem;
-    padding-top: 1.5rem;
+    height: fit-content;
 }
 .navLink a{
     color: white;
     font-size: 1.2rem;
+    
 }
 .navLink:hover{
     border-radius: 10px;
+    background-color: #13273a;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+ }
+
+ #cartAmount{
+
+ }
+ .cartAmount{
+    background-color:#bd0000;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(1.5rem,-0.5rem);
+ }
+ .displayNone{
+    display: none;
  }
 
 /* -----------------------------CART STYLE */
@@ -405,7 +290,7 @@ th img{
     display: unset;
     position:absolute;
     z-index: 100;
-    top: 11%;
+    top: 8%;
     overflow-y: scroll;
     max-height: 30rem;
     border-radius: 10px;
@@ -424,6 +309,8 @@ th img{
     margin: 2rem;
     text-align: center;
     color: white;
+    
+    text-shadow: -6px 4px 4px rgba(0,0,0,0.48);
 }
 .introduction{
     margin: 1rem;
@@ -431,13 +318,19 @@ th img{
     color: white;
     width: 50%;
     margin: auto;
+    
+    text-shadow: -6px 4px 4px rgba(0,0,0,0.48);
 }
 .introduction h3{
     font-size: 1.5rem;
+    
+    text-shadow: -6px 4px 4px rgba(0,0,0,0.48);
 }
 .introduction p{
     padding: 2rem;
     font-size: 1.3rem;
+    
+    text-shadow: -6px 4px 4px rgba(0,0,0,0.48);
 }
 
 
@@ -448,7 +341,9 @@ th img{
 
 
 /* ---------------------------------------------------------------------------------LOGIN STYLE */
-
+.loginContainer{
+    margin: 13rem 0 13rem 0;
+}
 .container{
     display: flex;
     align-items: center;
@@ -523,4 +418,20 @@ th img{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1rem;
+}
+/* -------------------------- footer */
+footer{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    margin-top: 3rem;
+    background-color: #0b1b2b;
+}
+.socialMedia{
+    margin-top: 1rem;
+}
+.socialMedia img{
+    width:3rem;
 }

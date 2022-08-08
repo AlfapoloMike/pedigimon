@@ -12,6 +12,7 @@ export const checkStorage = () => {
             })
             showItemCart(digimonStorage)
             createCartTotal(digimonStorage)
+            
         }
     }
 }

@@ -1,6 +1,4 @@
 import { addToCart } from "./addToCart.js"
-// import { digimons } from "./db.js"
-
 
 export const addListeners = (digimones) => {
 

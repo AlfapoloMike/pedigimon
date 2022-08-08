@@ -12,7 +12,8 @@ export const createCartTable =()=>{
     t.appendChild(table)
 }
 export const createCartTotal =(cart)=>{
-
+    
+    const cartCircle = document.querySelector('#cartAmount')
     const t = document.querySelector('#tableContainer')
     const table = document.createElement('tbody')
     let cartCount = 0
@@ -21,7 +22,7 @@ export const createCartTotal =(cart)=>{
         cartCount = cartCount + c.cantidad
         totalPrice = totalPrice + (c.precio * c.cantidad)
     })
-
+    
     table.innerHTML = `
     <tr>
     <th>Unidades</th>
@@ -31,4 +32,11 @@ export const createCartTotal =(cart)=>{
     </tr>
     `
     t.appendChild(table)
+    cartCircle.textContent = cartCount
+
+    if(cartCount  > 0){
+        cartCircle.classList = 'cartAmount'
+    }else{
+        cartCircle.classList = 'displayNone'
+    }
 }
