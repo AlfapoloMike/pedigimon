@@ -30,6 +30,7 @@ export const createCartTotal =(cart)=>{
     <th>Precio total</th>
     <th id="totalPrice">${totalPrice}</th>
     </tr>
+    <tr ><th class="buyCart" colspan="4"><a href="#">Finalizar compra</a></th></tr>
     `
     t.appendChild(table)
     cartCircle.textContent = cartCount

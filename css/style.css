@@ -19,7 +19,7 @@ body {
     background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
     padding: 1rem;
     border-radius: 10px;
-    margin: 5rem auto 0.5rem auto;
+    margin: 8rem auto 0.5rem auto;
     width: fit-content;
     display: flex;
     color: #FFFF;
@@ -214,12 +214,17 @@ body {
 /* ----------------------WEB NAV */
 
 .webNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
     background-color: #0b1b2b;
+    width: 100%;
     height: 6rem;
     text-shadow: -6px 4px 4px rgba(0,0,0,0.48);
 }
@@ -238,9 +243,6 @@ body {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
  }
 
- #cartAmount{
-
- }
  .cartAmount{
     background-color:#bd0000;
     border-radius: 50%;
@@ -254,6 +256,14 @@ body {
  .displayNone{
     display: none;
  }
+ .buyCart{
+    text-align: center;
+    background-color: #f10d0d;
+}
+.buyCart:hover{
+    background-color: #0df146;
+
+}
 
 /* -----------------------------CART STYLE */
 
@@ -290,7 +300,7 @@ th img{
     display: unset;
     position:absolute;
     z-index: 100;
-    top: 8%;
+
     overflow-y: scroll;
     max-height: 30rem;
     border-radius: 10px;
@@ -299,7 +309,6 @@ th img{
     display: unset;
     position:absolute;
     z-index: 100;
-    top: 11%;
 }
 
 
@@ -386,7 +395,7 @@ th img{
 }
 .register{
     background: linear-gradient(55deg, rgba(36,0,36,1) 0%, rgba(21,58,200,1) 20%, rgba(2,124,250,1) 85%, rgba(0,215,255,1) 100%);
-    height: 25rem;
+    height: 30rem;
     width: 40%;
     display: flex;
     justify-content: center;
@@ -396,11 +405,12 @@ th img{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .formOption{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 50%;
+    font-size: 1.2rem;
     padding: 0.2rem;
     margin-top: 0.5rem;
     margin-left: auto;
@@ -419,6 +429,7 @@ th img{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1rem;
 }
+
 /* -------------------------- footer */
 footer{
     align-self: flex-end;

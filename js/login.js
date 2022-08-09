@@ -48,11 +48,11 @@ export const showForm = () =>{
     register.classList = 'register'
     register.innerHTML = `
     <label class="formOption" for="user">Usuario</label>
-    <input class="formOption" type="text" placeholder="ejemplo123">
+    <input class="formOption" type="text" placeholder="ejemplo123" required>
     <label class="formOption" for="password">Contraseña</label>
-    <input class="formOption" type="password">
+    <input class="formOption"  type="password" required pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9].*[0-9])(?=.*[^a-zA-Z0-9]).{8,}"> 
     <label class="formOption" for="mail">Correo electronico</label>
-    <input class="formOption" type="email" placeholder="ejemplo@hotmail.com">
+    <input class="formOption" type="email" placeholder="ejemplo@hotmail.com" required pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+">
     <label class="formOption" for="birthDate">Fecha de nacimiento</label>
     <input class="formOption" type="date">
     <div class="formOption">
